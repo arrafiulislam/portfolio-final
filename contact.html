@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Ar Rafiul Islam Rafim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="site-head-inner">
+    <a class="site-name" href="index.html">Ar Rafiul Islam Rafim<span>Computer Vision &amp; AI</span></a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="wrap">
+      <div class="kicker">Get in touch</div>
+      <h1>Contact</h1>
+      <p class="dek">Happy to hear from prospective advisors, collaborators, or students. I usually reply within a couple of days.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap wrap--wide">
+      <div class="contact-grid">
+        <div>
+          <h2>Details</h2>
+          <ul class="contact-list" style="margin-top:20px;">
+            <li><span class="label">Email</span><a href="mailto:arrafiulislamrafim@gmail.com">arrafiulislamrafim@gmail.com</a></li>
+            <li><span class="label">Phone</span><span>+880 1836 600295</span></li>
+            <li><span class="label">Location</span><span>Dhaka, Bangladesh</span></li>
+            <li><span class="label">Website</span><a href="https://rafiul.me">rafiul.me</a></li>
+            <li><span class="label">GitHub</span><a href="https://github.com/arrafiulIslam">arrafiulIslam</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Send a message</h2>
+          <form class="contact-form" id="contactForm" style="margin-top:20px;">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+              <label for="email">Your email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit">Send message</button>
+          </form>
+          <p class="form-note">This form opens your email client with the message pre-filled — this is a static site with no server, so nothing is sent automatically. Replace this with a form service such as Formspree if you'd like true in-page delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap wrap--wide">
+    <span>© 2026 Ar Rafiul Islam Rafim</span>
+    <span><a href="mailto:arrafiulislamrafim@gmail.com">arrafiulislamrafim@gmail.com</a> · <a href="https://rafiul.me">rafiul.me</a> · <a href="https://github.com/arrafiulIslam">GitHub</a></span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+  var subject = encodeURIComponent('Message from ' + name + ' via rafiul.me');
+  var body = encodeURIComponent(message + '\n\n— ' + name + ' (' + email + ')');
+  window.location.href = 'mailto:arrafiulislamrafim@gmail.com?subject=' + subject + '&body=' + body;
+});
+</script>
+
+</body>
+</html>

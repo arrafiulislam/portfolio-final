@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Ar Rafiul Islam Rafim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="site-head-inner">
+    <a class="site-name" href="index.html">Ar Rafiul Islam Rafim<span>Computer Vision &amp; AI</span></a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="wrap">
+      <div class="kicker">Research statement</div>
+      <h1>Vision systems that hold up outside the lab</h1>
+      <p class="dek">My work sits at the intersection of computer vision and applied deep learning, with a growing focus on healthcare where a model's mistakes carry real weight, and the training data is rarely as clean or as large as we'd like.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>What I work on</h2>
+      <p style="margin-top:18px;">Most of my projects start from a practical constraint: a custom dataset collected from scratch, a small clinic's worth of imaging data, or the need to train across institutions that cannot share raw data. Building detection and classification systems under those constraints rather than on curated benchmarks has shaped how I think about generalization, transfer learning, and evaluation.</p>
+      <p>In crop-disease detection, this meant building and validating a custom Bangladeshi pumpkin-leaf dataset rather than relying on existing benchmarks that don't reflect local growing conditions. In banknote detection, it meant designing a multi-view transformer that stays robust when a note is photographed at an awkward angle or in poor lighting. In colorectal cancer grading, it means comparing centralized and federated training so the same model can be useful whether or not a hospital is willing to share its data.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Where I want to take it</h2>
+      <p style="margin-top:18px;">I'm applying to PhD programs to work on multimodal and federated approaches to medical AI combining imaging with structured clinical or behavioral data, and training methods that respect data-sharing constraints between institutions rather than treating them as an obstacle to route around. I'm especially interested in diagnostic support systems that are evaluated not just on accuracy, but on how well they communicate uncertainty to a clinician who has to act on the result.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap wrap--wide">
+      <h2>Selected projects</h2>
+      <div class="grid-3" style="margin-top:28px;">
+        <div>
+          <h3>Autism Spectrum Analyser</h3>
+          <p>A web-based decision-support platform (React, Node.js, Express, MongoDB) that helps clinicians and caregivers track and analyze behavioral patterns in autistic children. Undergraduate capstone, supervised by Rashedul Amin Tuhin.</p>
+        </div>
+        <div>
+          <h3>Colorectal cancer grading</h3>
+          <p>A gated dual-scale feature-fusion model for grading colorectal cancer histopathology, benchmarked in both centralized and federated training regimes. Currently under review at <em>Biomedical Signal Processing and Control</em>.</p>
+        </div>
+        <div>
+          <h3>ET-AMAF banknote detection</h3>
+          <p>An adaptive multi-view transformer for detecting and verifying banknotes across viewpoints and imaging conditions. Accepted to IEEE SPICSCON 2026.</p>
+        </div>
+        <div>
+          <h3>Pumpkin leaf disease detection</h3>
+          <p>Transfer-learning models trained on a custom dataset collected from pumpkin farms in Bangladesh, addressing the gap between benchmark crop datasets and local agricultural conditions. Presented at IEEE COMPAS 2024.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap wrap--wide">
+    <span>© 2026 Ar Rafiul Islam Rafim</span>
+    <span><a href="mailto:arrafiulislamrafim@gmail.com">arrafiulislamrafim@gmail.com</a> · <a href="https://rafiul.me">rafiul.me</a> · <a href="https://github.com/arrafiulIslam">GitHub</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
